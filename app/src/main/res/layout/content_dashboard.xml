@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="localhost.huskroot.Dashboard"
+    tools:showIn="@layout/app_bar_dashboard"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_pageview_white_36dp"
+                    android:id="@+id/image1"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:background="@color/ColorSuccess" />
+
+                <TextView
+                    android:text="0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/value1"
+                    android:textSize="50sp"
+                    android:textAlignment="center"
+                    android:textStyle="normal|bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <TextView
+                android:text="Your Total Crop Views"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/label1"
+                android:layout_weight="2"
+                android:textAlignment="textStart"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="normal|bold"
+                android:textAllCaps="true"
+                android:padding="10dp"
+                android:background="@color/ColorSuccess" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_cloud_upload_white_36dp"
+                android:id="@+id/image2"
+                android:layout_weight="1"
+                android:tint="@android:color/white"
+                android:padding="5dp"
+                android:background="@color/ColorInfo" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/value2"
+                android:textSize="50sp"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:gravity="center"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="Total Uploaded Crops"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/label1"
+            android:layout_weight="2"
+            android:textAlignment="textStart"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true"
+            android:padding="10dp"
+            android:background="@color/ColorInfo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_link_white_36dp"
+                android:id="@+id/image3"
+                android:layout_weight="1"
+                android:tint="@android:color/white"
+                android:padding="5dp"
+                android:background="@color/ColorWarning" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/value3"
+                android:textSize="50sp"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:gravity="center"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="Your Total Referals"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/label3"
+            android:layout_weight="2"
+            android:textAlignment="textStart"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true"
+            android:padding="10dp"
+            android:background="@color/ColorWarning" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_mouse_white_36dp"
+                android:id="@+id/image4"
+                android:layout_weight="1"
+                android:tint="@android:color/white"
+                android:padding="5dp"
+                android:background="@color/ColorDanger" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/value4"
+                android:textSize="50sp"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:gravity="center"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="Your Total Product Clicks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/label4"
+            android:layout_weight="2"
+            android:textAlignment="textStart"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true"
+            android:padding="10dp"
+            android:background="@color/ColorDanger" />
+    </LinearLayout>
+
+
+</LinearLayout>

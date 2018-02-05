@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnReset"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Reset"
+                android:background="@color/ColorDanger"
+                android:textColorLink="#FFF"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Apply"
+                android:background="@color/ColorSuccess"
+                android:textColorLink="#FFF"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:layout_weight="0.5"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Please apply to change your account info."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/infoBar"
+            android:padding="10dp"
+            android:background="@color/ColorInfo"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:drawableStart="@drawable/ic_info_outline_white_24dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_info_outline_white_24dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="First Name"
+            android:id="@+id/firstName"
+            android:inputType="textPersonName"
+            android:layout_margin="10dp"
+            android:selectAllOnFocus="false"
+            android:padding="10dp"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_height="50dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Last Name"
+            android:id="@+id/lastName"
+            android:inputType="textPersonName"
+            android:layout_margin="10dp"
+            android:selectAllOnFocus="false"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Phone"
+            android:id="@+id/phone"
+            android:inputType="phone"
+            android:layout_margin="10dp"
+            android:selectAllOnFocus="false"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            android:layout_margin="10dp"
+            android:selectAllOnFocus="false"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</RelativeLayout>

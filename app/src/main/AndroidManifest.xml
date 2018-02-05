@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="localhost.huskroot">
+
+    <!--BEGIN PERMISSIONS FOR CAMERA AND VIDEO RECORDING.-->
+    <uses-feature android:name="android.hardware.camera2" android:required="true"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!--END PERMISSIONS FOR CAMERA AND VIDEO RECORDING.-->
+
+    <!--BEGIN PERMISSIONS TO WRITE AND READ TO STORAGE-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!--END PERMISSIONS TO WRITE AND READ TO STORAGE-->
+
+    <!--BEGIN PERMISSIONS FOR AUDIO RECORDING-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--END PERMISSIONS FOR AUDIO RECORDING-->
+
+    <!--BEGIN PERMISSIONS FOR INTERNET ACCESS-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--END PERMISSIONS FOR INTERNET ACCESS-->
+
+    <!--BEGIN PERMISSIONS FOR GOOGLE MAP AND LOCATION SERVICES-->
+    <uses-library android:name="com.google.android.maps" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!--END PERMISSIONS FOR GOOGLE MAP AND LOCATION SERVICES-->
+
+
+    <application
+        android:name=".Initializer"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Dashboard"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity
+            android:name=".Explore"
+            android:label="@string/title_activity_explore"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Dashboard" />
+        </activity>
+
+        <activity
+            android:name=".ExploreSubCategory"
+            android:label="@string/title_activity_explore"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Explore" />
+        </activity>
+
+
+        <activity
+            android:name=".ExploreSubSubCategory"
+            android:label="@string/title_activity_explore"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity
+            android:name=".ListProduct"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Dashboard" />
+        </activity>
+
+        <activity
+            android:name=".MyProduct"
+            android:label="My Product"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Dashboard" />
+        </activity>
+
+        <activity
+            android:name=".ViewProduct"
+            android:label="@string/title_activity_view_product"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity
+            android:name=".ForgotPassword"
+            android:label="Forgot Password"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Register"
+            android:label="Register"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ProductVideo"
+            android:label="Product Video"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+
+        <activity
+            android:name=".AccountSettings"
+            android:label="Account Settings"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Dashboard" />
+        </activity>
+
+        <activity
+            android:name=".ChangePassword"
+            android:label="Change Password"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Dashboard" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ProductMapsActivity"
+            android:label="@string/title_activity_product_maps"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity
+            android:name=".AddProduct"
+            android:label="Add Product"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Dashboard" />
+        </activity>
+
+        <activity
+            android:name=".EditProduct"
+            android:label="Edit Product"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MyProduct" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+    
+</manifest>

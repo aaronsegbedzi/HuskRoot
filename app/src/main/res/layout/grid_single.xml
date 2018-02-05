@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/grid_count"
+                android:textStyle="normal|bold"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:textAlignment="textEnd"
+                android:gravity="center_vertical"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite" />
+
+        <ImageView
+                android:id="@+id/grid_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/list_image_background"
+            android:padding="10dp">
+            </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/grid_text"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="bottom"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/gridIcon"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:src="@drawable/ic_arrow_right"
+            android:background="@drawable/list_image_background"
+            android:padding="3dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

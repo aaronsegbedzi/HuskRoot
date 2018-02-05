@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="localhost.huskroot.Register"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/footer"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="11"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    app:srcCompat="@drawable/logo3x"
+                    android:id="@+id/imageView4"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparentWhite"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:selectAllOnFocus="false"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:textCursorDrawable="@null"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparentWhite"
+                    android:hint="Primary Phone"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:selectAllOnFocus="false"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:textCursorDrawable="@null"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:id="@+id/password1"
+                    android:inputType="textPassword"
+                    android:layout_margin="10dp"
+                    android:selectAllOnFocus="false"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:background="@color/transparentWhite"
+                    android:textCursorDrawable="@null"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirm Password"
+                    android:id="@+id/password2"
+                    android:inputType="textPassword"
+                    android:layout_margin="10dp"
+                    android:selectAllOnFocus="false"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:background="@color/transparentWhite"
+                    android:textCursorDrawable="@null"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="First Name"
+                    android:id="@+id/firstName"
+                    android:inputType="textPersonName"
+                    android:layout_margin="10dp"
+                    android:selectAllOnFocus="false"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:background="@color/transparentWhite"
+                    android:textCursorDrawable="@null"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Last Name"
+                    android:id="@+id/lastName"
+                    android:inputType="textPersonName"
+                    android:layout_margin="10dp"
+                    android:selectAllOnFocus="false"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:background="@color/transparentWhite"
+                    android:textCursorDrawable="@null"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Security Question"
+                    android:id="@+id/securityQuestion"
+                    android:layout_weight="1"
+                    android:background="@color/transparentWhite"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Security Answer"
+                    android:id="@+id/securityAnswer"
+                    android:inputType="textPersonName"
+                    android:layout_margin="10dp"
+                    android:selectAllOnFocus="false"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@android:color/white"
+                    android:background="@color/transparentWhite"
+                    android:textCursorDrawable="@null"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="User Type"
+                    android:id="@+id/userType"
+                    android:layout_weight="1"
+                    android:background="@color/transparentWhite"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="18sp" />
+
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btnRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:background="@color/transparentWhite"
+                    android:textColorLink="#FFF"
+                    android:layout_margin="10dp"
+                    android:textSize="18sp"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="50dp">
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorSecondary"
+                    android:padding="16dp" />
+
+            <TextView android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Already have an account? Sign in."
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:textStyle="normal|bold"
+                    android:background="@color/transparentWhite"
+                    android:layout_weight="3.7"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

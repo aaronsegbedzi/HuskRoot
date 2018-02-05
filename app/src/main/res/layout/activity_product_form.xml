@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="3">
+
+
+    <ScrollView
+        android:id="@+id/formScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Please Save to add your product."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/infoBar"
+                android:padding="10dp"
+                android:background="@color/ColorInfo"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:drawableStart="@android:drawable/ic_menu_info_details"
+                android:gravity="center"
+                android:drawableLeft="@android:drawable/ic_menu_info_details" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/image_upload_placeholder"
+                android:id="@+id/productImage"
+                android:layout_height="250dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_menu_camera"
+                    android:id="@+id/btnCamera"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:padding="10dp"
+                    android:tint="@color/colorWhite" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_menu_gallery"
+                    android:id="@+id/btnGallery"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:padding="10dp"
+                    android:tint="@color/colorWhite" />
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/name"
+                android:textStyle="normal|bold"
+                android:hint="Product Title"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/subSubCategory"
+                android:layout_height="50dp"
+                android:spinnerMode="dialog"
+                android:layout_margin="10dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="4"
+                android:layout_margin="10dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/price"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="normal|bold"
+                    android:textAllCaps="true"
+                    android:hint="Price"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/currency"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textStyle="normal|bold"
+                    android:textAllCaps="true"
+                    android:hint="Currency"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="GHC" />
+
+                <TextView
+                    android:text="/"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/divider"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textStyle="normal|bold"
+                    android:textAllCaps="true" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/unit"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textStyle="normal|bold"
+                    android:textAllCaps="true"
+                    android:hint="Unit"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="KG" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/location"
+                android:layout_weight="1"
+                android:hint="Product Location"
+                android:textStyle="normal|bold"
+                android:layout_margin="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/description"
+                android:hint="Product Description"
+                android:textStyle="normal|bold"
+                android:layout_margin="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:background="@color/colorPrimary"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:text="Audio Description ( Optional )"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/audioLabel"
+                        android:textStyle="normal|bold"
+                        android:textColor="@color/colorWhite"
+                        android:padding="10dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:textSize="18sp"/>
+
+                    <Button
+                        android:text="Record"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/audioRecordStart"
+                        android:layout_weight="1.5"
+                        android:background="@color/ColorDanger"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="normal|bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:weightSum="3">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/audioRecordStop"
+                        android:layout_weight="1"
+                        android:background="@color/colorWhite"
+                        android:tint="@color/ColorSuccess"
+                        android:text="Stop Recording"
+                        android:textStyle="normal|bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/audioPlay"
+                        android:layout_weight="1"
+                        android:background="@color/colorWhite"
+                        android:tint="@color/ColorSuccess"
+                        android:text="Play"
+                        android:textStyle="normal|bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/audioPause"
+                        android:layout_weight="1"
+                        android:background="@color/colorWhite"
+                        android:tint="@color/ColorWarning"
+                        android:text="Stop"
+                        android:textAlignment="center"
+                        android:textStyle="normal|bold"
+                        android:textColor="@color/colorPrimary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:weightSum="2"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary">
+
+                    <TextView
+                        android:text="Video Description ( Optional )"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/videoLabel"
+                        android:layout_weight="0.5"
+                        android:textStyle="normal|bold"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:padding="10dp"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:text="Record"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/btnVideo"
+                        android:layout_weight="1.5"
+                        android:background="@color/ColorDanger"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/darker_gray">
+
+                    <VideoView
+                        android:layout_width="match_parent"
+                        android:id="@+id/videoView"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:weightSum="2"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary">
+
+                    <TextView
+                        android:text="Product Geographic Location"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mapLabel"
+                        android:layout_weight="0.5"
+                        android:textStyle="normal|bold"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:padding="10dp"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:text="Current Location"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/btnMap"
+                        android:layout_weight="1.5"
+                        android:background="@color/ColorInfo"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="3">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            tools:context=".AddProduct" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Clear"
+            android:background="@color/ColorDanger"
+            android:textColorLink="#FFF"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:textStyle="normal|bold" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Save"
+            android:background="@color/ColorSuccess"
+            android:textColorLink="#FFF"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            android:layout_weight="0.5"
+            android:textColor="@android:color/white"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
